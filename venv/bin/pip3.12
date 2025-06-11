@@ -1,4 +1,4 @@
-#!/home/samkitxai/python-agentic-ai/venv/bin/python3
+#!/home/samkitxai/workspace/github.com/samkitxai/python-agentic-ai/venv/bin/python3
 # -*- coding: utf-8 -*-
 import re
 import sys
