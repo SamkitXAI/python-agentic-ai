@@ -34,5 +34,5 @@ def run_python_file(working_directory, file_path):
             if exit_code != 0:
                 print(f"Process exited with code {exit_code}")
     
-    except subprocess.TimeoutExpired:
+    except subprocess.TimeoutExpired as e:
         return f"Error: executing Python file: {e}"

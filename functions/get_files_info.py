@@ -21,9 +21,9 @@ def get_files_info(working_directory, directory=None):
         if not contents:
             return f'Error: "{directory}" is empty'
         for item in contents:
-            file_info = item + ": file_size=" + str(os.path.getsize(os.path.join(target, item))) + " bytes, is_dir=" + str(os.path.isdir(os.path.join(target, item))) + "\n"  
+            file_info = item + ": file_size=" + str(os.path.getsize(os.path.join(target, item))) + " bytes, is_dir=" + str(os.path.isdir(os.path.join(target, item)))   
             result.append(file_info)
-        return "".join(result)
+        return "\n".join(result)
     except Exception as e:
         return f"Error listing files: {e}"
     
